@@ -9,7 +9,10 @@
 </head>
 
 <body>
-  {% include header.html %}
+  <script type="module">
+    import {content} from "header.html"
+    document.body.appendChild(content);
+</script>
    <h1>Welcome</h1>
     <p>On this page <strong>you</strong> can learn <em>all</em> about me.</p>
     <h2>Where I work</h2>
