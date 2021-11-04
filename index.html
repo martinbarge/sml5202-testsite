@@ -1,27 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<title>My First Page</title>
-  <meta charset="utf-8">
-  <meta name="author" content="Martin Barge">
-  <meta name="description" content="This is a page for learning about HTML">
-  
-</head>
-
-<body>
- <div id="navbar"></div>
-  <script>
- 
-$(document).ready(function(){
-   $( window ).on( "load", function() {
-  //$("button").click(function(){
-    $.ajax({url: "includes/header.html", success: function(result){
-      $("#navbar").html(result);
-    }});
-  });
-});
-</script>
+<div id="navbar"></div>
  
    <h1>Welcome</h1>
     <p>On this page <strong>you</strong> can learn <em>all</em> about me.</p>
@@ -55,7 +32,16 @@ $(document).ready(function(){
   
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Two_Giraffes.PNG" alt="Two giraffes standing amongst trees." style="width:50%;">
 
-
+<script>
+$(document).ready(function(){
+   $( window ).on( "load", function() {
+  //$("button").click(function(){
+    $.ajax({url: "includes/header.html", success: function(result){
+      $("#navbar").html(result);
+    }});
+  });
+});
+</script>
 
 </body>
 </html>
