@@ -1,2 +1,7 @@
 url: "http://martinbarge.github.io/sml5202-testsite"
 baseurl: ""
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
