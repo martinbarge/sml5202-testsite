@@ -10,13 +10,14 @@
 </head>
 
 <body>
+ <div id="navbar"></div>
   <script>
  
 $(document).ready(function(){
    $( window ).on( "load", function() {
   //$("button").click(function(){
     $.ajax({url: "includes/header.html", success: function(result){
-      $("#div1").html(result);
+      $("#navbar").html(result);
     }});
   });
 });
@@ -26,7 +27,7 @@ $(document).ready(function(){
     <p>On this page <strong>you</strong> can learn <em>all</em> about me.</p>
     <h2>Where I work</h2>
   <p>I work at QMUL.</p>
- <div id="div1"></div>
+
 
 <hr>
   <p>A video I like:</p>
